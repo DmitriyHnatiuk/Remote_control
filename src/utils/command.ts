@@ -81,11 +81,11 @@ class Command {
       console.error(e);
     }
   }
-  //TODO: this functional
+
   async prnt_scrn() {
     try {
       const result = await screenShot();
-      return String(result.data);
+      return ` ${result}`;
     } catch (e) {
       console.error(e);
     }
